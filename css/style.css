@@ -190,6 +190,12 @@ header {
   }
 }
 
+@media (max-width: 500px) {
+  .d-done{
+    display: none;
+  }
+}
+
 .mobile-overlay {
   position: fixed;
   top: 0; left: 0;
