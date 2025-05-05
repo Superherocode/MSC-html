@@ -43,7 +43,7 @@ a {
   gap: 1rem;
 }
 .topbar-right button {
-  font-size: 18px;
+  font-size: 14px;
   background-color: #fff;
   padding: 2px 15px;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
@@ -65,7 +65,6 @@ a {
 /* Header */
 header {
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,7 +79,7 @@ header {
 }
 
 .logo img {
-  height: 100px;
+  height: 75px;
   transition: height 0.3s ease;
 }
 .navbar {
@@ -89,13 +88,19 @@ header {
 .nav-menu {
   list-style: none;
   display: flex;
+  font-size: 18px;
   gap: 25px;
   max-width: 100%; /* Giới hạn chiều rộng của nav-menu */
 }
 .nav-menu li a {
   text-decoration: none;
   color: #333;
+  border-bottom: solid 2px #fff;
   font-weight: 500;
+  transition: all ease-in-out .25s;
+}
+.nav-menu li a:hover {
+  border-color: #0091D0;
 }
 .nav-menu li a.active {
   color: #007bff; /* hoặc màu nổi bật bạn muốn */

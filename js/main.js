@@ -40,6 +40,6 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > 50) {
       logoImg.style.height = '50px';
     } else {
-      logoImg.style.height = '100px'; // Chiều cao ban đầu
+      logoImg.style.height = '70px'; // Chiều cao ban đầu
     }
   });
