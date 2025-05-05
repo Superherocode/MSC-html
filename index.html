@@ -48,10 +48,13 @@
       <a href="index.html"><img src="msc/assets/logo/logo.png" alt="PACE Logo" /></a>
     </div>
     <nav class="navbar">
+      <!-- Nút mở menu (hamburger icon) -->
       <div class="mobile-nav-toggle" id="mobile-toggle">
         <i class="bi bi-list"></i>
       </div>
-      <ul class="nav-menu" id="nav-menu">
+
+      <!-- Menu dành cho PC -->
+      <ul class="nav-menu">
         <li><a href="#gioi-thieu">GIỚI THIỆU</a></li>
         <li><a href="#dao-tao">ĐÀO TẠO</a></li>
         <li><a href="#du-an">DỰ ÁN</a></li>
@@ -61,7 +64,26 @@
         <li><a href="#lh">LIÊN HỆ</a></li>
       </ul>
     </nav>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
   </header>
+
+  <!-- Menu Mobile -->
+  <div class="nav-mobile-menu" id="nav-mobile-menu">
+    <div class="mobile-header">
+      <span>MENU</span>
+      <button id="mobile-close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="nav-mobile">
+      <li><a href="#gioi-thieu">GIỚI THIỆU</a></li>
+      <li><a href="#dao-tao">ĐÀO TẠO</a></li>
+      <li><a href="#du-an">DỰ ÁN</a></li>
+      <li><a href="#mc">MENTORS</a></li>
+      <li><a href="#msc">MSCer</a></li>
+      <li><a href="#msc">ĐỒNG HÀNH</a></li>
+      <li><a href="#lh">LIÊN HỆ</a></li>
+    </ul>
+  </div>
 
   <!-- icon-->
   <div class="floating-contact">
@@ -239,7 +261,7 @@
     }
 
     .content-container {
-      flex: 2 1 400px;
+      flex: 2 1;
       padding: 30px;
     }
 
@@ -449,7 +471,7 @@
     </style>
 
     <script src="js/main.js" defer></script>
-
+    <div class="mobile-overlay" id="mobile-overlay"></div>
   </body>
 
 </html>

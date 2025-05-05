@@ -102,6 +102,7 @@ header {
 .nav-menu li a:hover {
   border-color: #0091D0;
 }
+
 .nav-menu li a.active {
   color: #007bff; /* hoặc màu nổi bật bạn muốn */
   font-weight: bold;
@@ -109,11 +110,109 @@ header {
 }
 
 /* Mobile nav icon */
+/* Nút mở menu */
 .mobile-nav-toggle {
   display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #003B5C;
+}
+
+/* Menu mobile */
+.nav-mobile-menu {
+  position: fixed;
+  top: 0; right: -100%;
+  width: 75%;
+  max-width: 280px;
+  height: 100vh;
+  background: #003B5C;
+  color: white;
+  padding: 20px;
+  z-index: 1001;
+  transition: right 0.3s ease-in-out;
+}
+
+.nav-mobile-menu.active {
+  right: 0;
+}
+
+.nav-mobile {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.nav-mobile li {
+  margin: 15px 0;
+}
+
+.nav-mobile a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-mobile li a {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: solid 2px #003B5C;
+  font-weight: 500;
+  transition: all ease-in-out .25s;
+}
+
+.nav-mobile li a:hover {
+  border-color: #0091D0;
+}
+
+/* Header menu thu gọn */
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mobile-close {
+  background: none;
+  border: none;
+  color: white;
   font-size: 24px;
   cursor: pointer;
 }
+
+/* Ẩn menu desktop trên mobile */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+}
+
+.mobile-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* đen mờ */
+  z-index: 998;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-overlay.active {
+  display: block;
+}
+
+
+/* .offcanvas.offcanvas-end {
+  top: 0;
+  right: 0;
+  width: var(--bs-offcanvas-width);
+  border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+  transform: translateX(100%);
+} */
 
 /* Hero Section */
 .hero-carousel {

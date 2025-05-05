@@ -43,3 +43,25 @@ window.addEventListener('scroll', function() {
       logoImg.style.height = '70px'; // Chiều cao ban đầu
     }
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("mobile-toggle");
+    const close = document.getElementById("mobile-close");
+    const mobileMenu = document.getElementById("nav-mobile-menu");
+    const overlay = document.getElementById("mobile-overlay");
+
+    function openMenu() {
+      mobileMenu.classList.add("active");
+      overlay.classList.add("active");
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove("active");
+      overlay.classList.remove("active");
+    }
+
+    toggle.addEventListener("click", openMenu);
+    close.addEventListener("click", closeMenu);
+    overlay.addEventListener("click", closeMenu); // click nền mờ để đóng menu
+  });
+  
