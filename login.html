@@ -7,6 +7,7 @@
 
   <title>PACE Homepage</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +27,11 @@
       </div>
 
       <div class="d-flex">
-        <a href="login.html" target="_blank">
+        <a href="profile.html" target="_blank">
           <button class="profile-btn">Đăng Nhập</button>
         </a>
 
-        <a href="register.html" target="_blank">
+        <a href="profile.html" target="_blank">
           <button class="profile-btn">Đăng Ký</button>
         </a>
 
@@ -142,12 +143,25 @@
   </script>
 
 
-  <!--ảnh nền-->
-  <section class="underweb">
-    <div class="underweb-wrapper">
-      <img src="msc/assets/banner-danh-muc-dao-tao.webp" alt="Banner Đào Tạo">
+  <div class="login-container">
+    <div class="login-header">
+      <img src="msc/assets/nha_chung_2.png" alt="icon">
+      <h2>ĐĂNG NHẬP NGÔI NHÀ CHUNG</h2>
     </div>
-  </section>
+    <form>
+      <div class="form-group">
+        <label for="username">Tên đăng nhập</label>
+        <input type="text" id="username" placeholder="Tên đăng nhập">
+      </div>
+      <div class="form-group">
+        <label for="password">Mật khẩu</label>
+        <input type="password" id="password" placeholder="Mật khẩu">
+      </div>
+      <div class="login-button">
+        <button type="submit">Đăng nhập</button>
+      </div>
+    </form>
+  </div>
 
 
   <style>
@@ -264,118 +278,7 @@
 
   <body>
 
-    <section class="npo-section">
-      <div class="container">
-        <h2>CÁC TỔ CHỨC GIÁO DỤC<br>PHI LỢI NHUẬN CỦA PACE</h2>
-        <p class="section-desc">
-          Song hành với các hoạt động nói trên, PACE còn có PACE NPO / Tổ chức phi lợi nhuận<br>
-          với các sáng kiến giáo dục khai phóng có ý nghĩa được triển khai liên tục kể từ năm 2007 tới nay<br>
-          để góp phần hiện thực hóa sứ mệnh của mình một cách tổng thể, đa chiều và đầy đủ nhất.
-        </p>
 
-        <!-- Tổ chức 1 -->
-        <div class="npo-box">
-          <div class="logo-container">
-            <img src="msc/assets/Thiết kế chưa có tên.jpg" alt="IPL Scholarship">
-          </div>
-          <div class="content-container">
-            <h5><span>Dự Án: Khu Du Lịch Happy Land</span> </h5>
-            <p>
-              <span>Ban Giảng Huấn</span> Mentoring & Coaching
-            </p>
-            <p>
-              <span>Đối Tượng:</span> Đội Ngũ Sale & Marketing
-            </p>
-            <p>
-              <span>Thời gian:</span> 2020 - 2022
-            </p>
-          </div>
-        </div>
-
-        <!-- Tổ chức 2 -->
-        <div class="npo-box">
-          <div class="logo-container">
-            <img src="https://www.pace.edu.vn/uploads/partners/NPO/Logo_OpenEdu.webp" alt="OpenEdu Initiative">
-          </div>
-          <div class="content-container">
-            <h5>OpenEdu Initiative</h5>
-            <p>
-              Sáng kiến OpenEdu là “ngôi trường khai phóng trực tuyến” đầu tiên của Việt Nam, với tinh hoa tri thức toàn
-              cầu, nhưng được chuyển ngữ thành tiếng Việt và hoàn toàn miễn phí. OpenEdu được sáng lập bởi PACE và được
-              điều hành bởi IPL Scholarship.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Tổ chức 3 -->
-      <div class="npo-box">
-        <div class="logo-container">
-          <img src="msc/assets/Thiết kế chưa có tên.jpg" alt="IPL Scholarship">
-        </div>
-        <div class="content-container">
-          <h5><span>Dự Án: Khu Du Lịch Happy Land</span> </h5>
-          <p>
-            <span>Ban Giảng Huấn</span> Mentoring & Coaching
-          </p>
-          <p>
-            <span>Đối Tượng:</span> Đội Ngũ Sale & Marketing
-          </p>
-          <p>
-            <span>Thời gian:</span> 2020 - 2022
-          </p>
-        </div>
-      </div>
-      <!-- Tổ chức 4 -->
-      <div class="npo-box">
-        <div class="logo-container">
-          <img src="msc/assets/Thiết kế chưa có tên.jpg" alt="IPL Scholarship">
-        </div>
-        <div class="content-container">
-          <h5><span>Dự Án: Khu Du Lịch Happy Land</span> </h5>
-          <p>
-            <span>Ban Giảng Huấn</span> Mentoring & Coaching
-          </p>
-          <p>
-            <span>Đối Tượng:</span> Đội Ngũ Sale & Marketing
-          </p>
-          <p>
-            <span>Thời gian:</span> 2020 - 2022
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!--Members-->
-
-    <section class="partner">
-      <h2>BAN CỐ VẤN</h2>
-      <p class="subtext">
-        Những bậc thầy của kinh thương toàn cầu đã đến Việt Nam theo lời mời của MSC<br>
-        để đồng hành cùng doanh giới trên hành trình cùng khai mở một nền quản trị mới tại Việt Nam.
-      </p>
-      <!---->
-      <div class="partner-grid">
-        <div class="partner-item">
-          <img src="msc/assets/members/PHAvuong.jpg" alt="Michael Porter">
-          <h4>Hoàng Cửu Long</h4>
-          <p>“Cha đẻ” chiến lược cạnh tranh</p>
-        </div>
-        <!---->
-        <div class="partner-item">
-          <img src="msc/assets/members/PHAvuong.jpg" alt="Philip Kotler">
-          <h4>Phan Huỳnh Anh</h4>
-          <p>“Cha đẻ” Marketing hiện đại</p>
-        </div>
-        <!---->
-        <div class="partner-item">
-          <img src="msc/assets/members/PHAvuong.jpg" alt="Philip Kotler">
-          <h4>Đoàn Đức Minh</h4>
-          <p>“Chủ nhân” Nobel kinh tế</p>
-        </div>
-        <!---->
-
-      </div>
-    </section>
 
     <script src="js/script.js"></script>
 
